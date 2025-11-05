@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -33,125 +35,126 @@
     <link href="css/style.css" rel="stylesheet">
     <style>
         .category-card {
-          background: #ffffff;
-          border: 1px solid rgba(71, 97, 255, 0.4);
-          border-radius: 20px;
-          padding: 35px 30px;
-          position: relative;
-          transition: all 0.3s ease;
+            background: #ffffff;
+            border: 1px solid rgba(71, 97, 255, 0.4);
+            border-radius: 20px;
+            padding: 35px 30px;
+            position: relative;
+            transition: all 0.3s ease;
         }
-    
+
         .category-card:hover {
-          box-shadow: 0 0 25px rgba(71, 97, 255, 0.25);
-          transform: translateY(-5px);
-        }
-    
-        .category-card h5 {
-          font-weight: 600;
-          color: #000;
-          margin-bottom: 10px;
-        }
-    
-        .category-card p {
-          color: #555;
-          margin-bottom: 15px;
-        }
-    
-        .btn-outline {
-          background: rgba(71, 97, 255, 0.05);
-          color: #4761FF;
-          border: 1px solid rgba(71, 97, 255, 0.4);
-          font-size: 13px;
-          border-radius: 20px;
-          padding: 6px 14px;
-          margin-bottom: 8px;
-          cursor: pointer;
-        }
-    
-        .btn-outline:hover {
-          background: rgba(71, 97, 255, 0.15);
-        }
-    
-        .btn-main {
-          background: #4761FF;
-          border: none;
-          color: #fff;
-          font-weight: 600;
-          padding: 10px;
-          border-radius: 10px;
-          width: 100%;
-          transition: 0.3s;
-        }
-    
-        .btn-main:hover {
-          opacity: 0.9;
-        }
-    
-        .icon-box {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          background: rgba(71, 97, 255, 0.08);
-          border-radius: 10px;
-          padding: 8px;
-          color: #4761FF;
-        }
-    
-        .final-card {
-          background: #ffffff;
-          border-radius: 20px;
-          padding: 50px;
-          text-align: center;
-          margin-top: 60px;
-          border: 1px solid rgba(71, 97, 255, 0.35);
-        }
-    
-        .section-label {
-          display: inline-block;
-          border: 1px solid #4761FF;
-          color: #4761FF;
-          padding: 6px 14px;
-          border-radius: 30px;
-          font-size: 14px;
-          margin-bottom: 12px;
-        }
-    
-        ul.role-list {
-          color: #555;
-          font-size: 14px;
-          list-style: none;
-          padding-left: 0;
-          margin-top: 10px;
-          display: none;
-        }
-    
-        ul.role-list li {
-          padding-left: 5px;
-          margin-bottom: 5px;
-        }
-    
-        .view-toggle.active + ul.role-list {
-          display: block;
-          animation: fadeIn 0.4s ease;
-        }
-    
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
+            box-shadow: 0 0 25px rgba(71, 97, 255, 0.25);
             transform: translateY(-5px);
-          }
-    
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+        }
+
+        .category-card h5 {
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .category-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .btn-outline {
+            background: rgba(71, 97, 255, 0.05);
+            color: #4761FF;
+            border: 1px solid rgba(71, 97, 255, 0.4);
+            font-size: 13px;
+            border-radius: 20px;
+            padding: 6px 14px;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .btn-outline:hover {
+            background: rgba(71, 97, 255, 0.15);
+        }
+
+        .btn-main {
+            background: #4761FF;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            opacity: 0.9;
+        }
+
+        .icon-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(71, 97, 255, 0.08);
+            border-radius: 10px;
+            padding: 8px;
+            color: #4761FF;
+        }
+
+        .final-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            margin-top: 60px;
+            border: 1px solid rgba(71, 97, 255, 0.35);
+        }
+
+        .section-label {
+            display: inline-block;
+            border: 1px solid #4761FF;
+            color: #4761FF;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        ul.role-list {
+            color: #555;
+            font-size: 14px;
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+            display: none;
+        }
+
+        ul.role-list li {
+            padding-left: 5px;
+            margin-bottom: 5px;
+        }
+
+        .view-toggle.active+ul.role-list {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -163,7 +166,8 @@
                 <a href="index.html" class="navbar-brand d-lg-none">
                     <h1 class="fw-bold m-0">GrowMark</h1>
                 </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -213,10 +217,10 @@
                     <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
                     <h5>Design & Creative</h5>
                     <p>Explore opportunities in this category.</p>
-    
+
                     <button class="btn-outline">5 Open Positions</button><br>
                     <button class="btn-outline view-toggle">View All Roles</button>
-    
+
                     <ul class="role-list">
                         <li>- Graphic Designer</li>
                         <li>- UI/UX Designer</li>
@@ -224,21 +228,21 @@
                         <li>- Creative Director</li>
                         <li>- Brand Designer</li>
                     </ul>
-    
-                    <button class="btn-main mt-3">Apply Now →</button>
-                </div>
+
+                    <a href="contact.html"> <button class="btn-main mt-3">Apply Now →</button>
+                    </a>                </div>
             </div>
-    
+
             <!-- Education & Training -->
             <div class="col-md-6 col-lg-6 col-xl-6">
                 <div class="category-card">
                     <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
                     <h5>Education & Training</h5>
                     <p>Explore opportunities in this category.</p>
-    
+
                     <button class="btn-outline">5 Open Positions</button><br>
                     <button class="btn-outline view-toggle">View All Roles</button>
-    
+
                     <ul class="role-list">
                         <li>- Academic Proofreader</li>
                         <li>- Language Coach</li>
@@ -246,42 +250,42 @@
                         <li>- Course Content Assistant</li>
                         <li>- Online Tutor</li>
                     </ul>
-    
-                    <button class="btn-main mt-3">Apply Now →</button>
-                </div>
+
+                    <a href="contact.html"> <button class="btn-main mt-3">Apply Now →</button>
+                    </a>                </div>
             </div>
-    
+
             <!-- Marketing & Sales -->
             <div class="col-md-6 col-lg-6 col-xl-6">
                 <div class="category-card">
                     <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
                     <h5>Marketing & Sales</h5>
                     <p>Explore opportunities in this category.</p>
-    
+
                     <button class="btn-outline">4 Open Positions</button><br>
                     <button class="btn-outline view-toggle">View All Roles</button>
-    
+
                     <ul class="role-list">
                         <li>- Sales Executive</li>
                         <li>- Marketing Manager</li>
                         <li>- Social Media Specialist</li>
                         <li>- Content Strategist</li>
                     </ul>
-    
-                    <button class="btn-main mt-3">Apply Now →</button>
-                </div>
+
+                    <a href="contact.html"> <button class="btn-main mt-3">Apply Now →</button>
+                    </a>                </div>
             </div>
-    
+
             <!-- IT & Development -->
             <div class="col-md-6 col-lg-6 col-xl-6">
                 <div class="category-card">
                     <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
                     <h5>IT & Development</h5>
                     <p>Explore opportunities in this category.</p>
-    
+
                     <button class="btn-outline">6 Open Positions</button><br>
                     <button class="btn-outline view-toggle">View All Roles</button>
-    
+
                     <ul class="role-list">
                         <li>- Frontend Developer</li>
                         <li>- Backend Developer</li>
@@ -290,8 +294,8 @@
                         <li>- DevOps Engineer</li>
                         <li>- Database Administrator</li>
                     </ul>
-    
-                    <button class="btn-main mt-3">Apply Now →</button>
+                    <a href="contact.html"> <button class="btn-main mt-3">Apply Now →</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -311,8 +315,10 @@
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@bridgefort.com</p>
                     <div class="d-flex pt-3">
                         <!-- <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a> -->
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fa-brands fa-whatsapp"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fa-brands fa-telegram"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fa-brands fa-telegram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -327,14 +333,16 @@
                     <h6 class="text-light">09:00 am - 07:00 pm</h6>
                     <p class="mb-1">Saturday - Sunday</p>
                     <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                   
+
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Bridgefort</h4>
                     <p>Connecting Talent With Opportunity.</p>
                     <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <a class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2" href="contact.html">SignUp</a>
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <a class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2"
+                            href="contact.html">SignUp</a>
                     </div>
                 </div>
             </div>
@@ -343,7 +351,8 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -359,10 +368,10 @@
 
     <!-- Toggle View Roles Script -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const toggleButtons = document.querySelectorAll(".view-toggle");
             toggleButtons.forEach(button => {
-                button.addEventListener("click", function() {
+                button.addEventListener("click", function () {
                     button.classList.toggle("active");
                     const roleList = button.nextElementSibling;
                     if (roleList && roleList.classList.contains("role-list")) {
