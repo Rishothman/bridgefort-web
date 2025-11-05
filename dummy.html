@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Roles by Category</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #000;
+      font-family: "Poppins", sans-serif;
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-weight: 700;
+      color: #000;
+    }
+
+    p {
+      color: #555;
+    }
+
+    .category-card {
+      background: #ffffff;
+      border: 1px solid rgba(71, 97, 255, 0.4);
+      border-radius: 20px;
+      padding: 35px 30px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .category-card:hover {
+      box-shadow: 0 0 25px rgba(71, 97, 255, 0.25);
+      transform: translateY(-5px);
+    }
+
+    .category-card h5 {
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .category-card p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .btn-outline {
+      background: rgba(71, 97, 255, 0.05);
+      color: #4761FF;
+      border: 1px solid rgba(71, 97, 255, 0.4);
+      font-size: 13px;
+      border-radius: 20px;
+      padding: 6px 14px;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover {
+      background: rgba(71, 97, 255, 0.15);
+    }
+
+    .btn-main {
+      background: #4761FF;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 10px;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .btn-main:hover {
+      opacity: 0.9;
+    }
+
+    .icon-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(71, 97, 255, 0.08);
+      border-radius: 10px;
+      padding: 8px;
+      color: #4761FF;
+    }
+
+    .final-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 50px;
+      text-align: center;
+      margin-top: 60px;
+      border: 1px solid rgba(71, 97, 255, 0.35);
+    }
+
+    .section-label {
+      display: inline-block;
+      background: rgba(71, 97, 255, 0.08);
+      border: 1px solid #4761FF;
+      color: #4761FF;
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    ul.role-list {
+      color: #555;
+      font-size: 14px;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+      display: none;
+    }
+
+    ul.role-list li {
+      padding-left: 5px;
+      margin-bottom: 5px;
+    }
+
+    .view-toggle.active + ul.role-list {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="text-center mb-5">
+    <span class="section-label">Premium Opportunities</span>
+    <h2>Open Roles by Category</h2>
+    <p>Browse our open roles by category.</p>
+  </section>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Design & Creative -->
+      <div class="col-md-6 col-lg-6 col-xl-6">
+        <div class="category-card">
+          <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+          <h5>Design & Creative</h5>
+          <p>Explore opportunities in this category.</p>
+
+          <button class="btn-outline">5 Open Positions</button><br>
+          <button class="btn-outline view-toggle">View All Roles</button>
+
+          <ul class="role-list">
+            <li>- Graphic Designer</li>
+            <li>- UI/UX Designer</li>
+            <li>- Illustrator</li>
+            <li>- Creative Director</li>
+            <li>- Brand Designer</li>
+          </ul>
+
+          <button class="btn-main mt-3">Apply Now →</button>
+        </div>
+      </div>
+
+      <!-- Education & Training -->
+      <div class="col-md-6 col-lg-6 col-xl-6">
+        <div class="category-card">
+          <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+          <h5>Education & Training</h5>
+          <p>Explore opportunities in this category.</p>
+
+          <button class="btn-outline">5 Open Positions</button><br>
+          <button class="btn-outline view-toggle">View All Roles</button>
+
+          <ul class="role-list">
+            <li>- Academic Proofreader</li>
+            <li>- Language Coach</li>
+            <li>- eLearning Coordinator</li>
+            <li>- Course Content Assistant</li>
+            <li>- Online Tutor</li>
+          </ul>
+
+          <button class="btn-main mt-3">Apply Now →</button>
+        </div>
+      </div>
+
+      <!-- Continue your remaining cards here -->
+
+    </div>
+  </div>
+
+</body>
+</html>
